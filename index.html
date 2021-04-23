@@ -23,9 +23,15 @@
         />
       </div>
       <ul class="main-navbar__flex">
-        <li class="main-navbar__links">about us</li>
-        <li class="main-navbar__links">prices</li>
-        <li class="main-navbar__links">contacts</li>
+        <li class="main-navbar__list">
+          <a class="nav-links" href="#about-us__section">about us</a>
+        </li>
+        <li class="main-navbar__list">
+          <a class="nav-links" href="#prices__section">prices</a>
+        </li>
+        <li class="main-navbar__list">
+          <a class="nav-links" href="#contacts__section">contacts</a>
+        </li>
       </ul>
     </nav>
     <header class="main-header__container">
@@ -33,13 +39,13 @@
       <h2 class="main-header__subheader">We're totally fictional</h2>
     </header>
     <main>
-      <div class="about-us__section">
+      <div class="about-us__section" id="about-us__section">
         <p class="about-us__text">
           Fictional yoga studio was established in the end of April 2021 to
           showcase front-end skills of its founder Lenka Shynkarova.
         </p>
       </div>
-      <div class="prices__section">
+      <div class="prices__section" id="prices__section">
         <h3 class="section__headers">prices</h3>
         <p class="prices__text">
           You can choose from different membership options.
@@ -60,7 +66,7 @@
           <p class="membership-price">7 200,- reals per month</p>
         </div>
       </div>
-      <div class="contacts__section">
+      <div class="contacts__section" id="contacts__section">
         <h3 class="section__headers">contacts</h3>
         <div class="address__section">
           <h4 class="address__headers">Address</h4>
@@ -72,5 +78,31 @@
         </div>
       </div>
     </main>
+    <footer>
+      <ul class="social-media-list">
+        <li>
+          <a href=""
+            ><img
+              class="footer-links instagram"
+              src="img/iconmonstr-instagram-15.svg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              class="footer-links"
+              src="img/iconmonstr-facebook-5.svg"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+      <p class="footer__text">
+        developed by
+        <a class="developed-by" href="https://htmlena.dev/" target="_blank"
+          >htmlena</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
