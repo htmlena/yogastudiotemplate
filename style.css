@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Remove default padding */
@@ -55,16 +56,19 @@ select {
 /* nav styles */
 
 .main-navbar {
-  margin-bottom: 1rem;
+  background-color: black;
 }
 
 .main-logo__container {
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .main-logo {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  filter: invert(100%);
 }
 
 .main-navbar__flex {
@@ -73,13 +77,22 @@ select {
 }
 
 .main-navbar__links {
+  color: white;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.main-navbar__links:hover,
+.main-navbar__links:focus {
+  text-decoration: underline dotted;
 }
 
 /* header styles */
 
 .main-header__container {
-  background-image: url('img/hans-vivek-UiMkBvDQSAA-unsplash.jpg');
+  background-image: url('img/olivier-miche-wdOvQjyfUe8-unsplash.webp');
   background-size: cover;
+  background-color: black;
   padding: 8rem 1rem;
   display: flex;
   flex-direction: column;
@@ -88,8 +101,22 @@ select {
 
 .main-header__header {
   color: white;
+  background: transparent;
+  backdrop-filter: blur(1000px);
 }
 
 .main-header__subheader {
   color: white;
+}
+
+/* main styles */
+
+main {
+  background-color: hsla(60, 56%, 91%, 0.1);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.about-us {
+  text-align: center;
 }
