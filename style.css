@@ -79,7 +79,7 @@ select {
 .main-navbar__links {
   color: white;
   cursor: pointer;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .main-navbar__links:hover,
@@ -114,9 +114,39 @@ select {
 main {
   background-color: hsla(60, 56%, 91%, 0.1);
   min-height: 100vh;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 }
 
-.about-us {
+.about-us__section {
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+.prices__section {
+  text-align: center;
+}
+
+.section__headers {
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+/* price-cards styles*/
+
+.membership-card {
+  margin: 3rem 0 3rem;
+}
+
+.membership__headers {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.membership-price {
+  text-transform: uppercase;
+}
+
+.hr {
+  width: 70%;
 }
