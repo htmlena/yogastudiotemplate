@@ -136,13 +136,16 @@ main {
 
 .about-us__gallery {
   display: grid;
-  grid-row-gap: 3rem;
 }
 
 .single-photo {
   width: 100vw;
   height: auto;
   margin: 0 -1rem;
+}
+
+.gallery-text {
+  text-align: center;
 }
 
 .prices__section {
@@ -163,7 +166,7 @@ main {
 /* price-cards styles*/
 
 .membership-card {
-  margin: 3rem 0 3rem;
+  padding: 1rem 0 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +176,6 @@ main {
 .membership__headers {
   text-transform: uppercase;
   padding: 0.5rem;
-  margin: 0.5rem;
 }
 
 .membership-price {
@@ -237,4 +239,98 @@ footer {
   font-weight: 700;
   text-decoration: underline;
   opacity: 0.7;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 3rem 0;
+  }
+
+  .about-us__text {
+    padding: 0 10rem 2rem;
+  }
+  .gallery-text {
+    padding: 4rem 1rem;
+  }
+
+  .hr {
+    width: 30%;
+  }
+
+  .about-us__gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'item1 item2'
+      'item4 item3'
+      'item5 item6'
+      'item8 item7'
+      'item9 item10'
+      'item12 item11';
+    justify-items: center;
+  }
+
+  .single-photo {
+    width: 100%;
+  }
+
+  .item1 {
+    grid-area: item1;
+  }
+
+  .item2 {
+    grid-area: item2;
+  }
+
+  .item3 {
+    grid-area: item3;
+  }
+
+  .item4 {
+    grid-area: item4;
+  }
+
+  .item5 {
+    grid-area: item5;
+  }
+
+  .item6 {
+    grid-area: item6;
+  }
+
+  .item7 {
+    grid-area: item7;
+  }
+
+  .item8 {
+    grid-area: item8;
+  }
+
+  .item9 {
+    grid-area: item9;
+  }
+
+  .item10 {
+    grid-area: item10;
+  }
+
+  .item11 {
+    grid-area: item11;
+  }
+
+  .item12 {
+    grid-area: item12;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-us__gallery {
+    gap: 3rem 3rem;
+  }
+
+  main {
+    padding: 3rem 10rem;
+  }
 }
