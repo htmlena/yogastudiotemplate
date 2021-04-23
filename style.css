@@ -74,23 +74,24 @@ select {
 .main-navbar__flex {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 1rem;
 }
 
 .main-navbar__links {
   color: white;
   cursor: pointer;
-  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
 }
 
 .main-navbar__links:hover,
 .main-navbar__links:focus {
-  text-decoration: underline dotted;
 }
 
 /* header styles */
 
 .main-header__container {
-  background-image: url('img/olivier-miche-wdOvQjyfUe8-unsplash.webp');
+  background-image: linear-gradient(180deg, black, #a9a3a300 20%),
+    url(img/olivier-miche-wdOvQjyfUe8-unsplash.webp);
   background-size: cover;
   background-color: black;
   padding: 8rem 1rem;
@@ -114,27 +115,43 @@ select {
 main {
   background-color: hsla(60, 56%, 91%, 0.1);
   min-height: 100vh;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__text,
+.about-us__text {
+  text-align: center;
 }
 
 .about-us__section {
-  text-align: center;
-  margin-bottom: 3rem;
+  margin: 0 1rem 3rem;
 }
 
 .prices__section {
-  text-align: center;
 }
 
 .section__headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
   font-weight: 900;
+  background-color: black;
+  color: white;
+  padding: 2rem 0 2rem;
 }
 
 /* price-cards styles*/
 
 .membership-card {
   margin: 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .membership__headers {
@@ -149,4 +166,22 @@ main {
 
 .hr {
   width: 70%;
+}
+
+/* contacts styles */
+
+.contacts__section {
+}
+
+.address__section {
+}
+
+.address__headers {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.address__text {
+  text-align: center;
+  padding: 1rem 5rem 3rem;
 }
