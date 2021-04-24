@@ -247,6 +247,8 @@ footer {
 @media (min-width: 768px) {
   main {
     padding: 3rem 0;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .about-us__text {
@@ -328,9 +330,5 @@ footer {
 @media (min-width: 992px) {
   .about-us__gallery {
     gap: 3rem 3rem;
-  }
-
-  main {
-    padding: 3rem 10rem;
   }
 }
