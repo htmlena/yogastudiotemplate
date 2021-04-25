@@ -131,6 +131,10 @@ main {
   padding: 1rem;
 }
 
+.about-us__text {
+  margin-bottom: 1.5rem;
+}
+
 .about-us__section {
   margin-bottom: 3rem;
 }
