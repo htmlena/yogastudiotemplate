@@ -126,6 +126,10 @@ select {
   cursor: pointer;
 }
 
+.accessible-text {
+  display: none;
+}
+
 /* header styles */
 
 .main-header__container {
