@@ -103,14 +103,14 @@ select {
   margin-top: 0;
 }
 
-.main-navbar__list:hover,
-.main-navbar__list:focus {
-  border-bottom: 1px solid white;
-}
-
 .nav-links {
   text-decoration: none;
   color: white;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  text-decoration: underline;
 }
 
 .nav-btn {
@@ -235,6 +235,7 @@ main {
   padding: 0.5rem 3rem;
   cursor: pointer;
   border-radius: 3px;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -244,9 +245,7 @@ main {
 
 .btn:active {
   background-color: black;
-  border: 1px solid white;
   color: white;
-  transform: translateY(2px);
 }
 
 /* contacts styles */
